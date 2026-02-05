@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yhteydenotto | Helsingin IV-Huolto Oy</title>
+<meta name="description" content="Ota yhteyttä Helsingin IV-Huoltoon. Pyydä tarjous taloyhtiön ilmanvaihtohuollosta tai muista palveluistamme." />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+tailwind.config = { theme: { fontFamily: { sans: ['Inter', 'sans-serif'] }, extend: { colors: { brand: { dark: '#0f172a', main: '#1d4ed8', accent: '#facc15' } } } } }
+</script>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+<header class="bg-white border-b border-slate-200">
+<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+<a href="index.html" class="font-extrabold text-brand-dark">Helsingin IV-Huolto</a>
+<nav class="hidden md:flex gap-8 text-sm font-medium">
+<a href="index.html">Etusivu</a>
+<a href="company.html">Yritys</a>
+<a href="services/iv-huolto.html">Palvelut</a>
+<a href="contact.html" class="text-brand-main">Yhteydenotto</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="bg-slate-900 text-white">
+<div class="max-w-7xl mx-auto px-6 py-24 text-center">
+<h1 class="text-4xl font-extrabold mb-4">Ota yhteyttä</h1>
+<p class="text-lg text-slate-300 max-w-2xl mx-auto">
+Keskustellaan kiinteistösi tarpeista ja suunnitellaan sopiva IV-palvelukokonaisuus. Vastaamme nopeasti ja asiantuntevasti ilman turhaa myyntipuhetta.
+</p>
+</div>
+</section>
+
+<section class="max-w-3xl mx-auto px-6 py-20">
+<form class="bg-white border border-slate-200 rounded-xl p-8 space-y-6" action="mailto:info@helsinginivhuolto.fi" method="post">
+  <div>
+    <label class="block font-medium mb-1" for="name">Nimi</label>
+    <input class="w-full border border-slate-300 rounded px-3 py-2" type="text" id="name" name="name" required>
+  </div>
+  <div>
+    <label class="block font-medium mb-1" for="company">Yritys / Taloyhtiö</label>
+    <input class="w-full border border-slate-300 rounded px-3 py-2" type="text" id="company" name="company" required>
+  </div>
+  <div>
+    <label class="block font-medium mb-1" for="email">Sähköposti</label>
+    <input class="w-full border border-slate-300 rounded px-3 py-2" type="email" id="email" name="email" required>
+  </div>
+  <div>
+    <label class="block font-medium mb-1" for="phone">Puhelin</label>
+    <input class="w-full border border-slate-300 rounded px-3 py-2" type="tel" id="phone" name="phone">
+  </div>
+  <div>
+    <label class="block font-medium mb-1" for="message">Viesti / Tarpeet</label>
+    <textarea class="w-full border border-slate-300 rounded px-3 py-2" id="message" name="message" rows="5" required></textarea>
+  </div>
+  <button type="submit" class="w-full bg-brand-main text-white font-semibold px-4 py-3 rounded hover:bg-blue-700">
+    Lähetä viesti
+  <

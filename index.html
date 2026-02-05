@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Helsingin IV-Huolto Oy | Ilmanvaihtopalvelut taloyhtiöille</title>
+<meta name="description" content="Helsingin IV-Huolto Oy tarjoaa ilmanvaihdon huolto-, asennus- ja tarkastuspalvelut taloyhtiöille, isännöitsijöille ja kiinteistöille pääkaupunkiseudulla.">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script>
+tailwind.config = {
+  theme: {
+    fontFamily: { sans: ['Inter', 'sans-serif'] },
+    extend: {
+      colors: {
+        brand: { dark: '#0f172a', main: '#1d4ed8', accent: '#facc15' }
+      }
+    }
+  }
+}
+</script>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+<!-- HEADER -->
+<header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="index.html" class="text-xl font-extrabold text-brand-dark" title="Helsingin IV-Huolto Oy – Etusivu">Helsingin IV-Huolto</a>
+    <nav class="hidden md:flex gap-8 text-sm font-medium" aria-label="Päänavigaatio">
+      <a href="index.html" class="text-brand-main">Etusivu</a>
+      <a href="company.html">Yritys</a>
+      <a href="services/iv-huolto.html">Palvelut</a>
+      <a href="contact.html">Yhteydenotto</a>
+      <a href="en/index.html" lang="en" class="text-slate-500">EN</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden focus:outline-none focus:ring-2 focus:ring-brand-main rounded" aria-label="Avaa valikko" aria-expanded="false">☰</button>
+  </div>
+  <nav id="mobileMenu" class="hidden md:hidden border-t border-slate-200 bg-white" aria-label="Mobiilinavigaatio">
+    <a href="index.html" class="block px-6 py-3">Etusivu</a>
+    <a href="company.html" class="block px-6 py-3">Yritys</a>
+    <a href="services/iv-huolto.html" class="block px-6 py-3">Palvelut</a>
+    <a href="contact.html" class="block px-6 py-3">Yhteydenotto</a>
+    <a href="en/index.html" lang="en" class="block px-6 py-3 text-slate-500">English</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="bg-gradient-to-br from-slate-900 to-slate-800 text-white min-h-screen flex items-center">
+  <div class="max-w-7xl mx-auto px-6 py-24 lg:py-32 grid lg:grid-cols-2 gap-16 items-center">
+    <div>
+      <h1 class="text-4xl lg:text-5xl font-extrabold leading-tight mb-6">
+        Ilmanvaihdon luotettava kumppani taloyhtiöille
+      </h1>
+      <p class="text-lg text-slate-300 mb-8 max-w-xl">
+        Suunnitelmalliset ilmanvaihdon huolto-, asennus- ja tarkastuspalvelut
+        taloyhtiöille, isännöitsijöille ja kiinteistöille. Ennakoimme ongelmat ja toimitamme ammattimaisesti.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="contact.html" class="bg-brand-accent text-slate-900 font-semibold px-6 py-3 rounded-md">
+          Pyydä tarjous
+        </a>
+        <a href="services/iv-huolto.html" class="border border-slate-400 px-6 py-3 rounded-md">
+          Tutustu palveluihin
+        </a>
+      </div>
+    </div>
+    <aside class="bg-white/5 backdrop-blur border border-white/10 rounded-xl p-8" aria-label="Keskeiset vahvuudet">
+      <ul class="space-y-6 text-slate-200">
+        <li><strong>✔ B2B-erikoistuminen</strong><br>Taloyhtiöt ja kiinteistöt</li>
+        <li><strong>✔ Yli 10 vuoden kokemus</strong><br>IV-järjestelmät kokonaisuutena</li>
+        <li><strong>✔ Selkeä raportointi</strong><br>Isännöitsijöille ja omistajille</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<footer class="bg-slate-900 text-slate-400 py-10 text-center">
+  <div class="max-w-7xl mx-auto px-6">
+    <p>&copy; Helsingin IV-Huolto Oy</p>
+  </div>
+</footer>
+
+<script>
+const btn = document.getElementById('menuBtn');
+const menu = document.getElementById('mobileMenu');
+btn.addEventListener('c

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yritys | Helsingin IV-Huolto Oy</title>
+<meta name="description" content="Helsingin IV-Huolto Oy on luotettava taloyhtiöiden ja kiinteistöjen ilmanvaihtopalveluiden kumppani. Ammattitaitoa ja suunnitelmallisuutta vuodesta 2012.">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script>
+tailwind.config = {
+  theme: {
+    fontFamily: { sans: ['Inter', 'sans-serif'] },
+    extend: { colors: { brand: { dark: '#0f172a', main: '#1d4ed8', accent: '#facc15' } } }
+  }
+}
+</script>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+<header class="bg-white border-b border-slate-200">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="index.html" class="font-extrabold text-brand-dark">Helsingin IV-Huolto</a>
+    <nav class="hidden md:flex gap-8 text-sm font-medium">
+      <a href="index.html">Etusivu</a>
+      <a href="company.html" class="text-brand-main">Yritys</a>
+      <a href="services/iv-huolto.html">Palvelut</a>
+      <a href="contact.html">Yhteydenotto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="bg-gradient-to-br from-slate-900 to-slate-800 text-white">
+  <div class="max-w-7xl mx-auto px-6 py-24 text-center">
+    <h1 class="text-4xl lg:text-5xl font-extrabold mb-4">Luotettava kumppani taloyhtiöille ja kiinteistöille</h1>
+    <p class="text-lg text-slate-300 max-w-2xl mx-auto">
+      Helsingin IV-Huolto Oy on vuodesta 2012 tarjonnut ammattitaitoisia, suunnitelmallisia ja dokumentoituja IV-palveluja taloyhtiöille, isännöitsijöille ja kiinteistönomistajille pääkaupunkiseudulla.
+    </p>
+  </div>
+</section>
+
+<!-- COMPANY INFO -->
+<section class="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-3 gap-16">
+  <article class="lg:col-span-2">
+    <h2 class="text-2xl font-bold mb-4">Meistä</h2>
+    <p class="mb-6">
+      Olemme B2B-fokusoitunut IV-yritys, joka ymmärtää taloyhtiöiden ja kiinteistöjen erityistarpeet. Työmme on aina suunnitelmallista, turvallista ja dokumentoitua. Pitkäaikaiset asiakassuhteet ja hyvä maine ovat meille tärkeitä.
+    </p>
+
+    <h3 class="text-xl font-semibold mb-3">Missio</h3>
+    <p class="mb-6">
+      Tarjota kiinteistöille kokonaisvaltaista ilmanvaihtopalvelua, joka parantaa energiatehokkuutta, sisäilman laatua ja järjestelmien käyttöikää. Meidän tavoitteenamme on tehdä kiinteistön ylläpidosta ennakoivaa ja vaivatonta.
+    </p>
+
+    <h3 class="text-xl font-semibold mb-3">Arvot</h3>
+    <ul class="list-disc pl-6 space-y-2 mb-6">
+      <li>Ammattitaito ja luotettavuus</li>
+      <li>Suunnitelmallisuus ja ennakoivuus</li>
+      <li>Asiakaslähtöisyys ja selkeä viestintä</li>
+      <li>Ympäristö- ja energiatehokkuus</li>
+    </ul>
+
+    <h3 class="text-xl font-semibold mb-3">Kokemus ja asiantuntijuus</h3>
+    <p>
+      Yli 10 vuoden kokemus taloyhtiöiden ja kiinteistöjen ilmanvaihdosta takaa laadukkaat ratkaisut. Meiltä saat asiantuntevan kumppanin, joka huolehtii järjestelmien toimivuudesta ja raportoi selkeästi isännöitsijöille.
+    </p>
+  </article>
+
+  <aside class="bg-white border border-slate-200 rounded-xl p-8 h-fit">
+    <h4 class="font-semibold text-lg mb-3">Ota yhteyttä</h4>
+    <p class="text-sm text-slate-600 mb-6">
+      Keskustellaan kiinteistösi tarpeista ja suunnitellaan sopiva palvelukokonaisuus.
+    </p>
+    <a href="contact.html" class="block text-center bg-brand-main text-white font-semibold px-4 py-3 rounded hover:bg-blue-700">
+      Pyydä tarjous
+    </a>
+  </aside>
+</section>
+</main>
+
+<footer class="bg-slate-900 text-slate-400 py-10 text-center">
+  <p>&copy; Helsingin IV-Huolto Oy</p>
+</footer>
+
+</body>
+</html>
